@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Kodludo</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Changa:200,400,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/index.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/images/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/images/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/images/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/images/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/images/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/images/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/images/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/images/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/images/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/images/favicon/android-icon-192x192.png"
+    />
+
+    <script type="text/javascript" src="/js/md5.min.js"></script>
+    <script type="text/javascript" src="/js/lib.js"></script>
+    <script type="text/javascript" src="/js/game.js"></script>
+    <script type="text/javascript" src="/js/app.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Ĉu vi povas malkovri la kodon per tiuj ĉi indikoj?</h1>
+
+      <div class="clues">
+        <div class="clue">
+          <div class="digits">6 8 2</div>
+          <div class="text">
+            Unu el la numeroj ĝustas kaj estas en ĝusta loko.
+          </div>
+        </div>
+
+        <div class="clue">
+          <div class="digits">6 1 4</div>
+          <div class="text">
+            Unu el la numeroj ĝustas kaj estas en malĝusta loko.
+          </div>
+        </div>
+
+        <div class="clue">
+          <div class="digits">2 0 6</div>
+          <div class="text">
+            Du el la numeroj ĝustas kaj ambaŭ estas en malĝustaj lokoj.
+          </div>
+        </div>
+
+        <div class="clue">
+          <div class="digits">7 3 8</div>
+          <div class="text">
+            Ĉiuj numeroj malĝustas.
+          </div>
+        </div>
+
+        <div class="clue">
+          <div class="digits">3 8 0</div>
+          <div class="text">
+            Unu el la numeroj ĝustas kaj estas en malĝusta loko.
+          </div>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <div class="input">
+          <input
+            class="number"
+            type="text"
+            min="0"
+            max="9"
+            maxlength="1"
+            value="0"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            id="input-1"
+          />
+
+          <input
+            class="number"
+            type="text"
+            min="0"
+            max="9"
+            maxlength="1"
+            value="0"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            id="input-2"
+          />
+
+          <input
+            class="number"
+            type="text"
+            min="0"
+            max="9"
+            maxlength="1"
+            value="0"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            id="input-3"
+          />
+
+          <div class="button noselect" id="guess-button">&nbsp;</div>
+        </div>
+
+        <div class="remaining">
+          <div class="val" id="attempts-remaining">-</div>
+          <div class="label" id="attempts-remaining-label">-</div>
+        </div>
+      </div>
+
+      <footer>
+        Farita de <a href="https://twitter.com/martinrue_eo">Martin</a>
+      </footer>
+    </div>
+
+    <script type="text/javascript">
+      app.init();
+    </script>
+  </body>
+</html>

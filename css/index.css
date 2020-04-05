@@ -1,0 +1,190 @@
+html,
+body {
+  font-family: "Changa", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  padding: 0;
+  margin: 30px;
+  min-width: 300px;
+  background: #1e1e1e url("/images/bg.jpg") no-repeat center center;
+}
+
+.center {
+  margin: 20px;
+}
+
+.content {
+  margin: 0px auto;
+  max-width: 700px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  background: #00000044;
+  border-radius: 6px;
+}
+
+.clues {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  line-height: 25px;
+  border-bottom: solid 1px #444;
+}
+
+.clues .clue {
+  display: flex;
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.clues .clue .digits {
+  flex-shrink: 0;
+  width: 90px;
+  height: 45px;
+  padding: 2px 0 0 15px;
+  text-align: left;
+  background: url("/images/clue.png") no-repeat left top/90px;
+}
+
+.clues .clue .text {
+  align-self: flex-start;
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background: #00000044;
+  border-radius: 6px;
+}
+
+.input-container {
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.input-container.locked {
+  opacity: 0.3;
+}
+
+.input-container .input {
+  float: right;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+  background: url("/images/input.svg") no-repeat left top/220px;
+  width: 220px;
+  height: 72px;
+}
+
+.input-container .input.fail {
+  background: url("/images/input-fail.svg") no-repeat left top/220px;
+}
+
+.input-container .input.ok {
+  background: url("/images/input-ok.svg") no-repeat left top/220px;
+}
+
+.input-container .input.locked {
+  background: url("/images/input-locked.svg") no-repeat left top/220px;
+}
+
+.input-container .input .number {
+  float: left;
+  height: 35px;
+  width: 41px;
+  margin: 8px 0 0 9px;
+  padding: 1px;
+  background: #222;
+  font-family: "Changa", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  border: solid 1px #333;
+}
+
+.input-container.locked .input .number {
+  color: #ed5454;
+  pointer-events: none;
+}
+
+.input-container .input .button {
+  position: absolute;
+  right: 6px;
+  top: 8px;
+  width: 48px;
+  height: 64px;
+}
+
+.input-container .input .button:hover {
+  cursor: pointer;
+  background: #00000022;
+}
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+.input-container .remaining {
+  float: left;
+  margin: 20px 0;
+  font-family: "Changa", sans-serif;
+  padding: 5px 15px;
+  border: solid 5px #fff;
+  border-radius: 12px;
+}
+
+.input-container.locked .remaining {
+  border-color: #ed5454;
+}
+
+.input-container .remaining .val {
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: green;
+}
+
+.input-container.locked .remaining .val {
+  color: #ed5454;
+}
+
+.input-container .remaining .label {
+  margin: 3px 0 3px 0;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input-container.locked .remaining .label {
+  color: #ed5454;
+}
+
+footer {
+  margin: 40px 0 60px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 450px) {
+  body {
+    margin: 2px;
+  }
+}
